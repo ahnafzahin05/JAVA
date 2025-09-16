@@ -10,10 +10,10 @@ public class Unionof2SortedArrays {
         ArrayList<Integer> add = new ArrayList<>();
         int i=0, j=0;
         while(i<a.length){
-            add.add(a[i]);
+            add.add(a[i++]);
         }
         while( j<b.length){
-            add.add(b[j]);
+            add.add(b[j++]);
         }
         Collections.sort(add);
         for(int k=0, l=1; k< add.size(); k++, l++){
