@@ -27,3 +27,14 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# ==========================
+# Custom rule: only keep src/
+# ==========================
+
+# Ignore everything by default
+*
+
+# Keep src/ and everything inside
+!src/
+!src/**
