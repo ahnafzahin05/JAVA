@@ -1,10 +1,11 @@
-Welcome to My Java Repo!
+# Welcome to My Java Repo!
 
-This repo contains all my Java practice codes. Click the "src" file.
+**This repo contains all my Java practice codes.**  
+Click the "src" file.
 
 I’m learning step by step and uploading my progress here 🚀
 
-📚 Topics Covered
+## 📚 Topics Covered
 - If-else
 - Loops
 - Pattern Printing
@@ -15,4 +16,3 @@ I’m learning step by step and uploading my progress here 🚀
 - Strings
 - CodeForces Problem Solving
 - To be Continued....
-
