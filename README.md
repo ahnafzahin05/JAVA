@@ -1,6 +1,6 @@
 Welcome to My Java Repo!
 
-This repo contains all my Java practice codes.  
+This repo contains all my Java practice codes. (Click the "src" file)
 I’m learning step by step and uploading my progress here 🚀
 
 📚 Topics Covered
