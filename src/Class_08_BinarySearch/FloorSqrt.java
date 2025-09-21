@@ -7,21 +7,20 @@ public class FloorSqrt {
     }
     public static int floorsqrt(int n){
         // T.C = O(logn)
-        int left=1, right=n/2;
+        int left = 1, right = n;
         int floor = -1;
-
+        if(n==0) return 0;
         while(left<=right){
-            int mid = (left+right)/2;
-            if(mid*mid > n){
-                right = mid-1;
-            }
-            else if(mid*mid < n){
+            int mid = left + (right-left)/2;
+
+            if(mid > n/mid) right = mid-1; //mid*mid can cross 2*31 -1 space i.e. int limit, so to overcome this overflow
+            //error instead if writing if(mid*mid> n) we simply took divide m by n, then no overflow error will occur
+            else if(mid < n/mid){
                 floor = mid;
                 left = mid+1;
-            }
-            else return mid;
+            } else return mid;
         }
-        return floor;
+        return floor; //we could also return right
 
 
 
