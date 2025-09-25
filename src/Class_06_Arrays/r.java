@@ -1,6 +1,6 @@
 package Class_06_Arrays;
 
-public class TwoSum {
+public class r {
     public static void main(String[] args) {
         int[] arr = {2,7,11,15,27};
         int target = 22;

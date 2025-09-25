@@ -11,8 +11,9 @@ public class SegregateZeroM1 {
         for(int i=0; i<size; i++){
             arr[i] = sc.nextInt();
         }
-        int i = 0, j = size - 1;
 
+        int i = 0, j = size - 1; //i-->start, j-->end
+        //Two Pointer Method
         while (i < j) {
             if (arr[i] == 0) {
                 i++; // already in correct place

@@ -12,7 +12,7 @@ public class SegregateZeroM2 {
     //Sliding Window
     public static void moveOnes(int[] arr) {
         int n = arr.length;
-        int j = 0; // index of the left most zero
+        int j = 0; // index of the left most one
 
         for (int i = 0; i < n; i++) {
             if (arr[i] != 1) {

@@ -24,6 +24,23 @@ public class MoveAllZeroestoEnd {
             }
         }
 
+        //Another Method (Good One, easy to understand, Two Pointer method)
+//        int i = 0, j = arr.length - 1;
+//
+//        while (i < j) {
+//            if (arr[i] == 1) {
+//                i++; // already in correct place
+//            } else if (arr[j] == 0) {
+//                j--; // already in correct place
+//            } else {
+//                int temp = arr[i];
+//                arr[i] = arr[j];
+//                arr[j] = temp;
+//                i++;
+//                j--;
+//            }
+//        }
+
         //Another Method
 //        int n = arr.length;
 //        int j = 0; // pointer for next non-zero position
@@ -41,5 +58,6 @@ public class MoveAllZeroestoEnd {
 //            arr[j] = 0;
 //            j++;
 //        }
+
     }
 }
