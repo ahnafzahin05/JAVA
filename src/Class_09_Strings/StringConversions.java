@@ -3,6 +3,8 @@ package Class_09_Strings;
 public class StringConversions {
     public static void main(String[] args) {
         int n = 500;
+
+        //Int to String
 //        String s = ""; //empty string
 //        s+=n; //stored as string
         //using inbuilt method
