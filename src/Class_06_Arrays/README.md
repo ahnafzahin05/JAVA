@@ -20,7 +20,8 @@ A collection of **classic array & two-pointer problems**, categorized for better
 
 3. 🔵 **Two Sum**  
    Find two numbers in the array whose sum equals a given target.  
-   - Approach-1: Brute Force – **O(n²)**  
+   - Approach-1: Brute Force – **O(n²)**
+   - Approach-2: Binary Search – **O(nlogn)**  
    - Approach-2: Two Pointers (after sorting) – **O(n log n + n)** ✅  
 
 4. 🔵 **Two Difference**  
