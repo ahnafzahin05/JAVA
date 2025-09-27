@@ -73,7 +73,7 @@ A collection of **classic array & two-pointer problems**, categorized for better
 
 13. 🟡 **Trapping Rain Water**  
     - Approach-1: Brute Force (check left & right for every index) – **O(n²)**  
-    - Approach-2: Precompute LeftMax & RightMax arrays – **O(n)**, **O(n)** space  
+    - Approach-2: Precompute Peak Index (first occurrence), LeftMax and RightMax – **O(n)**, **O(1)** space  ✅ 
     - Approach-3: Two Pointers (optimal, in-place) – **O(n)** ✅  
 
 14. 🟡 **Three Sum**  
