@@ -21,19 +21,16 @@ A collection of **classic array & two-pointer problems**, categorized for better
 3. 🔵 **Two Sum**  
    Find two numbers in the array whose sum equals a given target.  
    - Approach-1: Brute Force – **O(n²)**  
-   - Approach-2: Hashing – **O(n)**  
-   - Approach-3: Two Pointers (after sorting) – **O(n log n + n)** ✅  
+   - Approach-2: Two Pointers (after sorting) – **O(n log n + n)** ✅  
 
 4. 🔵 **Two Difference**  
    Check if there exists a pair with the given difference.  
    - Approach-1: Brute Force – **O(n²)**  
-   - Approach-2: Hashing – **O(n)**  
-   - Approach-3: Two Pointers (sorted) – **O(n log n + n)** ✅  
+   - Approach-2: Two Pointers (sorted) – **O(n log n + n)** ✅  
 
 5. 🔵 **Product Pair**  
    Find if there exists a pair with the given product.  
    - Approach-1: Brute Force – **O(n²)**  
-   - Approach-2: Hashing – **O(n)**  
 
 6. 🔵 **Pair sum closest to 0**  
    Find the pair whose sum is closest to zero.  
@@ -88,5 +85,5 @@ A collection of **classic array & two-pointer problems**, categorized for better
 
 ✨ **Legend:**  
 - **Brute Force** = baseline slow solution  
-- **Two Pointer / Hashing / Prefix-Suffix** = optimized approaches  
+- **Two Pointer / Sliding Window / Prefix-Suffix / Kadane’s** = optimized approaches  
 - ✅ = most efficient / recommended solution  
