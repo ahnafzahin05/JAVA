@@ -8,21 +8,37 @@ A collection of **classic array & two-pointer problems**, categorized for better
 
 1. 🔵 **Segregate 0s and 1s**  
    Rearrange the array so that all `0`s appear before all `1`s.  
+   - Approach-1: Brute Force – **O(n²)**  
+   - Approach-2: Two Pointers – **O(n)** ✅  
+   - Approach-3: Sliding Window – **O(n)**  
 
 2. 🔵 **Move all zeroes to end**  
    Shift all zeros to the end while maintaining the relative order of non-zero elements.  
+   - Approach-1: Brute Force (extra array) – **O(n)**, **O(n)** space  
+   - Approach-2: Sliding Window – **O(n)**  
+   - Approach-3: Two Pointers (optimal, in-place) – **O(n)** ✅  
 
 3. 🔵 **Two Sum**  
    Find two numbers in the array whose sum equals a given target.  
+   - Approach-1: Brute Force – **O(n²)**  
+   - Approach-2: Hashing – **O(n)**  
+   - Approach-3: Two Pointers (after sorting) – **O(n log n + n)** ✅  
 
 4. 🔵 **Two Difference**  
    Check if there exists a pair with the given difference.  
+   - Approach-1: Brute Force – **O(n²)**  
+   - Approach-2: Hashing – **O(n)**  
+   - Approach-3: Two Pointers (sorted) – **O(n log n + n)** ✅  
 
 5. 🔵 **Product Pair**  
    Find if there exists a pair with the given product.  
+   - Approach-1: Brute Force – **O(n²)**  
+   - Approach-2: Hashing – **O(n)**  
 
 6. 🔵 **Pair sum closest to 0**  
    Find the pair whose sum is closest to zero.  
+   - Approach-1: Brute Force – **O(n²)**  
+   - Approach-2: Two Pointers (after sorting) – **O(n log n + n)** ✅  
 
 ---
 
@@ -30,30 +46,47 @@ A collection of **classic array & two-pointer problems**, categorized for better
 
 7. 🟢 **Printing all sub-arrays**  
    Print all possible non-empty subarrays of the given array.  
+   - Direct nested loops – **O(n³)** (to print all, unavoidable)  
 
 8. 🟢 **Divide array into 2 subarrays with equal sum**  
-   Check if the array can be divided into two parts with equal sum.  
+   - Approach-1: Brute Force (split & sum every index) – **O(n²)**  
+   - Approach-2: Prefix Sum – **O(n)** ✅  
 
 9. 🟢 **Prefix and Suffix**  
-   Compute prefix sums and suffix sums to solve array-based queries.  
+   - Compute prefix sums – **O(n)**  
+   - Compute suffix sums – **O(n)**  
+   - Query handling – **O(1)** each  
 
 10. 🟢 **Largest Sum Contiguous Subarray**  
-    Find the subarray with the maximum sum (Brute Force / Prefix Sum approach).  
+    - Approach-1: Brute Force – **O(n³)**  
+    - Approach-2: Prefix Sum – **O(n²)**  
+    - Approach-3: Kadane’s Algorithm – **O(n)** ✅  
 
-11. 🟢 **Kadane's Algorithm**  
-    Optimized method to find the maximum sum subarray in **O(n)**.  
+11. 🟢 **Kadane’s Algorithm**  
+    Direct optimal method – **O(n)**  
 
 12. 🟢 **Max difference between two elements**  
-    Find the maximum difference `arr[j] - arr[i]` such that `j > i`.
+    Find `arr[j] - arr[i]` such that `j > i`.  
+    - Approach-1: Brute Force – **O(n²)**  
+    - Approach-2: Track min element while iterating – **O(n)** ✅  
 
 ---
 
 ## ⚡ Advanced Array Challenges  
 
 13. 🟡 **Trapping Rain Water**  
-    Calculate how much water can be trapped between bars of different heights.  
+    - Approach-1: Brute Force (check left & right for every index) – **O(n²)**  
+    - Approach-2: Precompute LeftMax & RightMax arrays – **O(n)**, **O(n)** space  
+    - Approach-3: Two Pointers (optimal, in-place) – **O(n)** ✅  
 
 14. 🟡 **Three Sum**  
     Find three numbers in the array whose sum equals a given target.  
+    - Approach-1: Brute Force (3 nested loops) – **O(n³)**  
+    - Approach-2: Sorting + Two Pointers (reduce to 2Sum) – **O(n²)** ✅  
 
 ---
+
+✨ **Legend:**  
+- **Brute Force** = baseline slow solution  
+- **Two Pointer / Hashing / Prefix-Suffix** = optimized approaches  
+- ✅ = most efficient / recommended solution  
