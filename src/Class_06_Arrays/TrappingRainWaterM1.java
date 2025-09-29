@@ -1,6 +1,6 @@
 package Class_06_Arrays;
 
-public class TrappingRainWater {
+public class TrappingRainWaterM1 {
     public static void main(String[] args) {
         int[] arr = {4,2,0,5,2,6,2,3};
         System.out.println(water(arr));
@@ -17,13 +17,13 @@ public class TrappingRainWater {
         }
         int leftMax = arr[0];
         for(int i=0; i<peakIdx; i++){
-            if((leftMax-arr[i])>0) w+= leftMax - arr[i];
-            if(arr[i]>leftMax) leftMax = arr[i];
+            if(arr[i] < leftMax) w+= leftMax - arr[i]; //(leftMax-arr[i]) > 0, store water
+            else leftMax = arr[i]; //(leftMax-arr[i]) <= 0
         }
         int rightMax = arr[n-1];
-        for(int i=n-1; i>peakIdx; i--){
-            if((rightMax - arr[i]) > 0) w+= rightMax - arr[i];
-            if(arr[i]>rightMax) rightMax = arr[i];
+        for(int i=n-2; i>peakIdx; i--){
+            if(arr[i] < rightMax) w+= rightMax - arr[i]; //(rightMax - arr[i]) > 0, store water
+            else rightMax = arr[i]; //(rightMax-arr[i]) <= 0
         }
         return w;
     }
