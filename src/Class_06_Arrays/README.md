@@ -1,4 +1,4 @@
-# 🧑‍💻 Coder Army – Problem List  
+# 🧑‍💻 Problem List  
 
 A collection of **classic array & two-pointer problems**, categorized for better understanding and practice.  
 
