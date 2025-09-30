@@ -8,7 +8,7 @@ public class BubbleSort2 {
         //print(arr);
     }
     public static void sorted(int[] arr) {
-        //taking the largest number to its correct position
+        //taking the largest numbers to its correct position
         int n = arr.length;
         for(int i=0; i<n-1; i++){
             int swap = 0;
@@ -23,7 +23,7 @@ public class BubbleSort2 {
         }
     }
     public static void desSort(int[] arr){
-        //taking the smallest number to its correct position
+        //taking the smallest numbers to its correct position
         int n = arr.length;
         for(int i=0; i<n-1; i++){
             int swap = 0;
