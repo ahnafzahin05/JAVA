@@ -17,10 +17,16 @@ public class StringConversions {
 //        System.out.println(x+1);
 
         //String to Char
-        String r = "zahin";
-        char[] arr = r.toCharArray();
-        for(char ele : arr){
-            System.out.print(ele+" ");
-        }
+//        String r = "zahin";
+//        char[] arr = r.toCharArray();
+//        for(char ele : arr){
+//            System.out.print(ele+" ");
+//        }
+
+        //String to StringBuilder
+        String s = "Zahin";
+        StringBuilder a = new StringBuilder(s);
+        a.append("hello");
+        System.out.println(a);
     }
 }

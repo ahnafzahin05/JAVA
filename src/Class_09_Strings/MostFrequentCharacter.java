@@ -29,20 +29,24 @@ public class MostFrequentCharacter {
 //        int n = s.length();
 //        char[] arr = s.toCharArray();
 //        Arrays.sort(arr);
+
 //        int maxFreq = -1;
 //        char ans = s.charAt(0);
+
 //        int i=0, j=0;
 //        while(j<n){
 //            if(arr[i] == arr[j]) j++;
 //            else{
-//                if((j-i)>maxFreq){ //freq = j-i
-//                    maxFreq = j-i;
+//              int freq = j-i;
+//                if(freq > maxFreq){ //freq = j-i
+//                    maxFreq = freq;
 //                    ans = arr[i];
 //                }
 //                i = j;
 //            }
 //        }
-//        if((j-i)>maxFreq){ //freq = j-i
+
+//        if( (j-i) > maxFreq){ //freq = j-i
 //            maxFreq = j-i;
 //            ans = arr[i];
 //        }

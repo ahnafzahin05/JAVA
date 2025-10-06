@@ -6,6 +6,7 @@ public class concat {
         String b = " zahin";
         System.out.println(a.concat(b)); //no need
         a = a+b;
+        System.out.println('A' + 2 + "ZAHIN");
         System.out.println(a);
     }
 }

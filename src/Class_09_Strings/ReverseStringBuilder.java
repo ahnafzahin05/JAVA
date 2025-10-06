@@ -9,7 +9,7 @@ public class ReverseStringBuilder {
         System.out.println(s);
         //manual, two pointer technique
         int i=0, j=s.length()-1;
-        while(i<=j){ //swap
+        while(i<j){ //swap
             char temp1 = s.charAt(i);
             char temp2 = s.charAt(j);
             s.setCharAt(i,temp2);
