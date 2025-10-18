@@ -8,13 +8,13 @@ A collection of **classic array & two-pointer problems**, categorized for better
 
 1. 🔵 **Segregate 0s and 1s**  
    Rearrange the array so that all `0`s appear before all `1`s.  
-   - Approach-1: Brute Force – **O(n²)**  
+   - Approach-1: Brute Force/Bubble Sort – **O(n²)**  
    - Approach-2: Two Pointers – **O(n)** ✅  
    - Approach-3: Sliding Window – **O(n)**  
 
 2. 🔵 **Move all zeroes to end**  
    Shift all zeros to the end while maintaining the relative order of non-zero elements.  
-   - Approach-1: Brute Force (extra array) – **O(n)**, **O(n)** space  
+   - Approach-1: Brute Force/Bubble Sort Algo – **O(n²)**
    - Approach-2: Sliding Window – **O(n)**  
    - Approach-3: Two Pointers (optimal, in-place) – **O(n)** ✅  
 
