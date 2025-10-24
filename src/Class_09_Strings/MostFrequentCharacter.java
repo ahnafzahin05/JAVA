@@ -11,46 +11,41 @@ public class MostFrequentCharacter {
         //Method-3: Frequency Array (similar to HashMap) O(n)
         int[] freq = new int[26];
         for(int i=0; i<s.length(); i++){
-            int value = (int)s.charAt(i);
-            freq[value-97]++;
+            freq[s.charAt(i)-'a']++;
         }
         int max = -1;
-        char ans = s.charAt(0);
+        char ans = '\n';
         for(int i=0; i<26; i++){
-            if(freq[i]>max){
+            if(freq[i]>max) {
                 max = freq[i];
-                ans = (char) (i+97);
+                ans = (char)(i+'a');
             }
         }
         return ans;
 
 
-//        //Method-2: (Sorting) O(logn) Sliding Window Algo
-//        int n = s.length();
+//        //Method-2: (Sorting) O(nlogn) Sliding Window Algo
+
 //        char[] arr = s.toCharArray();
 //        Arrays.sort(arr);
-
-//        int maxFreq = -1;
-//        char ans = s.charAt(0);
-
-//        int i=0, j=0;
-//        while(j<n){
+//        int i=0, j=1;
+//        int maxW = -1;
+//        char ans = '0';
+//        while(j<s.length()){
 //            if(arr[i] == arr[j]) j++;
 //            else{
-//              int freq = j-i;
-//                if(freq > maxFreq){ //freq = j-i
-//                    maxFreq = freq;
+//                if(j-i>maxW) {
+//                    maxW = j-i;
 //                    ans = arr[i];
 //                }
-//                i = j;
+//                i = j++;
 //            }
 //        }
-
-//        if( (j-i) > maxFreq){ //freq = j-i
-//            maxFreq = j-i;
+//        if(j-i>maxW) {
+//            maxW = j-i;
 //            ans = arr[i];
 //        }
-//        return ans;
+//        System.out.println(ans);
 
 
 
