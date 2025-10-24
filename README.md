@@ -10,7 +10,7 @@ I’m learning step by step and uploading my progress here 🚀
 - Loops
 - Pattern Printing
 - Methods
-- Arrays (related algos like Kadane's, Two Pointers)
+- Arrays (& related algos like Kadane's, Two Pointers)
 - Sorting algorithms (Bubble, Selection, Insertion)
 - Binary Search
 - Strings
