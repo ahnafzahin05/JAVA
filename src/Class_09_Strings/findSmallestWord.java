@@ -44,7 +44,9 @@ public class findSmallestWord {
 //                // temp er lenght ta ber korte parbo taina? jeita amra actually (j-i) diye korte chacchilam,
 //                // eikhane j lagtesena cuz string er length method diyei ber kora jay, but array er khetre tokhn
 //                // length ber korar jonno duita pointer lagte parto
-//                if (temp.length() > 0 && temp.length() < min) { //temp er length zero hote parbena cuz string e multiple
+
+//                if (temp.length() > 0 && temp.length() < min) {
+//                      temp er length zero hote parbena cuz string e multiple
 //                    // spaces thakle tokhn space keo string banaye felbe temp, but we don't need spaces as temp string
 //                    min = temp.length();
 //                    ans = temp;

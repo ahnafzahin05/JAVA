@@ -6,25 +6,29 @@ public class Dubstep {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        StringBuilder a = new StringBuilder(s);
+        String wub = "WUB";
+        String temp = "";
         String ans = "";
-        boolean flag = false;
-        int i=0;
-        while(i<s.length()){
-            String check = "WUB";
-            String found = a.substring(i,i+3);
-            if(found.equals(check)) {
-                i+=3;
-                flag = true;
-            }
-            else{
-                if(!flag) ans+=s.charAt(i++);
+        int i=0, j=0;
+        while(j<s.length()){
+            if(s.charAt(j) == wub.charAt(i)){
+                temp+=s.charAt(j);
+                if(i==2) {
+                    ans+= temp + " ";
+                    temp = "";
+                    i=0;
+                }
                 else {
-                    ans+= " " + s.charAt(i++);
-                    flag = false;
+                    i++;
                 }
             }
+            else{
+                i=0;
+                temp+=s.charAt(j);
+            }
+            j++;
         }
+        ans+= temp;
         System.out.println(ans);
     }
 }

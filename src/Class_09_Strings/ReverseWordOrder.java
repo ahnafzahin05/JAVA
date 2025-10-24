@@ -10,12 +10,18 @@ public class ReverseWordOrder {
         String temp = "";
         for(int i=s.length()-1; i>=0; i--){
             if(s.charAt(i) == ' '){
-                if(temp.length()>0) ans+= temp + " ";
-                temp = "";
+                if (temp.length() > 0) {
+                    if (ans.length() > 0) ans += " ";
+                    ans += temp;
+                    temp = "";
+                }
             }
             else temp = s.charAt(i) + temp;
         }
-        if(temp.length()>0) ans+= temp;
+        if (temp.length() > 0) {
+            if (ans.length() > 0) ans += " ";
+            ans += temp;
+        }
         System.out.println(ans);
     }
 }
