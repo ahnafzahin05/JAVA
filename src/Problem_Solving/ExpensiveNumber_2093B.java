@@ -12,7 +12,7 @@ public class ExpensiveNumber_2093B {
             long firstDigIdx = -1;
             for(int i = s.length()-1; i>=0; i--){
                 if(s.charAt(i)>'0') {
-                    firstDigIdx=i;
+                    firstDigIdx=i;//
                     break;
                 }
             }
