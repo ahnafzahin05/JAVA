@@ -10,22 +10,15 @@ public class MakeItBeautiful_1783A {
             int n = sc.nextInt();
             int[] arr = new int[n];
             for(int i=0; i<n; i++) arr[i] = sc.nextInt();
-            boolean distinct = false;
-            for(int i=0; i<n-1; i++){
-                if(arr[i]!=arr[i+1]){
-                    distinct = true;
-                    break;
-                }
-            }
 
-            if(!distinct) System.out.println("NO");
-            else if(n == 2){
-                System.out.println("YES");
-                for(int ele: arr) System.out.print(ele+" ");
-                System.out.println();
-            }
+            boolean notDistinct = arr[0] == arr[n - 1];
+
+            if(notDistinct) System.out.println("NO");
             else{
-
+                System.out.println("YES");
+                System.out.print(arr[n-1]+" ");
+                for(int i=0; i<n-1; i++) System.out.print(arr[i]+" ");
+                System.out.println();
             }
         }
     }
