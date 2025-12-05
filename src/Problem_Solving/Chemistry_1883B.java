@@ -1,6 +1,5 @@
 package Problem_Solving;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Chemistry_1883B {
@@ -12,30 +11,15 @@ public class Chemistry_1883B {
             int k = sc.nextInt();
             String s = sc.next();
 
-            int[] freq = new int[26];
+            int[] freq = new int[26]; //frequency array
             for(int i=0; i<n; i++){
                 freq[s.charAt(i)-'a']++;
             }
-            char[] arr = s.toCharArray();
-            Arrays.sort(arr);
-            boolean distinct = false;
-            for(int i=0; i<26-1; i++){
-                if(arr[i]!=arr[i+1]){
-                    distinct = true;
-                    break;
-                }
-            }
+            //A palindrome can have maximum 1 odd frequency digit/character
+            int noOfOddOccurrence = 0;
+            for(int i=0; i<26; i++) if(freq[i]%2==1) noOfOddOccurrence++;
 
-            if(!distinct && k==n-1) System.out.println("YES");
-            else {
-                if(n%2==0){
-                    int odds = 0;
-                    for(int i=0; i<26; i++) if(freq[i]%2==1) odds++;
-
-                    if(k>=(odds-1)) System.out.println("YES");
-                    else System.out.println("NO");
-                }
-            }
+            System.out.println(k>=(noOfOddOccurrence-1) ? "YES" : "NO");
         }
     }
 }
