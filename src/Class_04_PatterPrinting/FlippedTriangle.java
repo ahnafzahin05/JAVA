@@ -12,7 +12,7 @@ public class FlippedTriangle {
                 System.out.print("* ");
             }
 //            for(int j=n; j>=i; j--){
-//                System.out.print("* ");
+//                System.out.printNto1("* ");
 //            }
             System.out.println();
         }

@@ -24,7 +24,7 @@ public class BubbleSort {
                 }
             }
             if(isSorted) break; //if already sorted, then break the loop
-            //print(arr);
+            //printNto1(arr);
         }
         print(arr);
 
@@ -43,7 +43,7 @@ public class BubbleSort {
 //                    arr[j+1] = temp;
 //                }
 //            }
-//            print(arr);
+//            printNto1(arr);
 //        }
 
 
@@ -61,7 +61,7 @@ public class BubbleSort {
 //            }
 //            if(swaps==0) break;
 //        }
-//        print(arr);
+//        printNto1(arr);
 
     }
 }

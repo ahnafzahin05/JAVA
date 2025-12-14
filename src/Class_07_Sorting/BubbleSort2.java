@@ -5,7 +5,7 @@ public class BubbleSort2 {
         int[] arr = {5,4,3,2,1};
         //sorted(arr);
         desSort(arr);
-        //print(arr);
+        //printNto1(arr);
     }
     public static void sorted(int[] arr) {
         //taking the largest numbers to its correct position

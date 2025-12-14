@@ -20,7 +20,7 @@ public class StringConversions {
 //        String r = "zahin";
 //        char[] arr = r.toCharArray();
 //        for(char ele : arr){
-//            System.out.print(ele+" ");
+//            System.out.printNto1(ele+" ");
 //        }
 
         //String to StringBuilder

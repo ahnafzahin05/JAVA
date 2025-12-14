@@ -43,7 +43,7 @@ public class SequenceGame_1862B {
 //            }
 //            System.out.println(ans.length);
 //            for(int ele: ans){
-//                System.out.print(ele+" ");
+//                System.out.printNto1(ele+" ");
 //            }
 //            System.out.println();
         }

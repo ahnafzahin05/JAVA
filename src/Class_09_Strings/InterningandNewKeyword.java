@@ -8,7 +8,7 @@ public class InterningandNewKeyword {
         //one can be accessible by s or t, and the other one using 'a'.
 
         //changing string using substring
-        String str = "Ahnaf"; //suppose we wanna print AhnZahinaf
+        String str = "Ahnaf"; //suppose we wanna printNto1 AhnZahinaf
         str = str.substring(0,3) + "Zahin" + str.substring(3);
         System.out.println(str);
     }

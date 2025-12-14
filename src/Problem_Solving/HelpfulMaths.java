@@ -13,12 +13,12 @@ public class HelpfulMaths {
             arr[j] = s.charAt(i);
         }
 //        for(char ele : arr){
-//            System.out.print(ele+" ");
+//            System.out.printNto1(ele+" ");
 //        }
         Arrays.sort(arr);
 //        System.out.println();
 //        for(char ele : arr){
-//            System.out.print(ele+" ");
+//            System.out.printNto1(ele+" ");
 //        }
         for(int i=0, j=0; i<s.length(); i++){
             if(i%2!=0) System.out.print("+");

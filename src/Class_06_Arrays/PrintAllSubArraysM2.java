@@ -16,7 +16,7 @@ public class PrintAllSubArraysM2 {
             for (int start = 0; start <= n - size; start++) {
                 int end = start + size - 1;  // Calculate ending position
 
-                // Inner loop: print elements from start to end
+                // Inner loop: printNto1 elements from start to end
                 for (int k = start; k <= end; k++) {
                     System.out.print(arr[k] + " ");
                 }

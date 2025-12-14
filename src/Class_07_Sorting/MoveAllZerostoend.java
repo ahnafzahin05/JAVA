@@ -26,7 +26,7 @@ public class MoveAllZerostoend {
             }//a[i]==0 hole just i++ korbo taile a[j] er moddhe 0 store hoye thakbe, tahole porer iteration jei iteration e a[i]=0 hobe sheitar sathe swap koraye dibo
             print(arr);
         }
-        //print(arr);
+        //printNto1(arr);
         //Output analysis (Check rough copy) i refers to index number
 //      i=0  1 0 -2 3 0 4 -5 0 10 0 12
 //      i=1  1 0 -2 3 0 4 -5 0 10 0 12
@@ -77,6 +77,6 @@ public class MoveAllZerostoend {
 //            }
 //            if(isSorted) break;
 //        }
-        //print(arr);
+        //printNto1(arr);
     }
 }

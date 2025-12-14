@@ -31,7 +31,7 @@ public class CommonElements {
 //            while(i<a.length){
 //                if(a[i]==b[j])
 //                {
-//                    System.out.print(a[i]+" ");
+//                    System.out.printNto1(a[i]+" ");
 //                    a[i] = Integer.MIN_VALUE;
 //                    break;
 //                }

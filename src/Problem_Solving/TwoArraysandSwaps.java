@@ -17,7 +17,7 @@ public class TwoArraysandSwaps {
                 }
             }
             if(isSorted) break; //if already sorted, then break the loop
-            //print(arr);
+            //printNto1(arr);
         }
     }
     public static void main(String[] args) {
