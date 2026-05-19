@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# But keep folders so Git can traverse them
+!*/
+
+# Keep src and everything inside it
+!src/
+!src/**
+
+# Keep .gitignore itself
+!.gitignore
