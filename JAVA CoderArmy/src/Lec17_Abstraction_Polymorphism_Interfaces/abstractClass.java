@@ -1,4 +1,4 @@
-package Lec_17;
+package Lec17_Abstraction_Polymorphism_Interfaces;
 
 public class abstractClass {
     public static void main(String[] args) {
