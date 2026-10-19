@@ -11,7 +11,7 @@ public class Initialization {
 //            System.out.println();
 //        }
         // Initialization method - 2
-        int[][] arr = {{6,0,2}, {1,3,5}, {7,4,0}};
+        int[][] arr = {{6,0,5}, {1,3,9}, {7,4,0}};
         for(int i=0; i<arr.length; i++){ //arr.length --> we get no. of rows
             for(int j=0; j<arr[0].length; j++){ // arr[0].length --> we get no. of coloumns
                 System.out.print(arr[i][j]+ " ");

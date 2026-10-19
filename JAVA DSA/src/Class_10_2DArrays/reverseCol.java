@@ -1,0 +1,20 @@
+package Class_10_2DArrays;
+
+import java.util.Arrays;
+
+public class reverseCol {
+    public static void main(String[] args) {
+        int[][] arr = {{2,8,3,4,7},{7,2,1,6,3},{5,5,4,1,4},{3,1,8,2,6}};
+        for(int i=0; i<arr[0].length; i++){
+            int l=0, r=arr.length-1;
+            while(l<r){
+                int temp = arr[l][i];
+                arr[l][i] = arr[r][i];
+                arr[r][i] = temp;
+                l++;
+                r--;
+            }
+        }
+        for(int[] ele:arr) System.out.println(Arrays.toString(ele));
+    }
+}
