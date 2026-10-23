@@ -16,6 +16,7 @@ public class perimeterTraversal {
         int fR = 0, fC = 0;
         int lR = arr.length-1, lC = arr[0].length-1;
 
+
         for(int t=0; t<k; t++){
             int m = (lC-fC+1)*(lC-fC+1) - (lC-fC-1)*(lC-fC-1);
             int[] ans = new int[m];
@@ -34,17 +35,7 @@ public class perimeterTraversal {
             rotateArray(ans,k-t);
             System.out.println(Arrays.toString(ans));
         }
-        
 
-
-//        for(int t=0; t<arr.length/2; t++){
-//            int row = arr.length, col = arr[0].length;
-//            for(int i=0+t; i<col-t; i++) System.out.print(arr[0+t][i]+" ");
-//            for(int i=1+t; i<row-t; i++) System.out.print(arr[i][col-1-t]+" ");
-//            for(int i=col-2-t; i>=0+t; i--) System.out.print(arr[row-1-t][i]+" ");
-//            for(int i=row-2-t; i>0+t; i--) System.out.print(arr[i][0+t]+" ");
-//            System.out.println();
-//        }
 
     }
 

@@ -5,13 +5,28 @@ public class remDuplicatesFromSortedLL2 {
 
     }
     public Node deleteDuplicates(Node head){
-        Node temp = head;
+        Node dummy = new Node(0);
         Node i = head;
-        Node prev = head;
+        Node temp = dummy;
 
-        while(temp!=null){
+        while(i!=null){
+            if(i.next==null || i.val!= i.next.val){
+                temp.next = i;
+                temp = i;
+                i = i.next;
+            }
+            else{
+                int dup = i.val;
+                while(i!=null && i.val==dup) i = i.next;
+//                Node j = i.next;
+//                while(j!=null && j.val == i.val) j = j.next;
+//                i = j;
 
+            }
         }
-        return null;
+
+        temp.next = null;
+
+        return dummy.next;
     }
 }
