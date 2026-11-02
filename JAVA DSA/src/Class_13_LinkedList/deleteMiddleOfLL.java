@@ -6,38 +6,32 @@ public class deleteMiddleOfLL {
     }
 
     public Node deleteMid(Node head){
-        Node fast = head;
+        if(head==null || head.next==null) return null;
+
+        Node fast = head.next.next;
         Node slow = head;
-        Node prev = null;
 
         while(fast!=null && fast.next!=null){
-            prev = slow;
             fast = fast.next.next;
             slow = slow.next;
         }
 
-        if(head.next==null) return null;
-        prev.next = slow.next;
+        slow.next = slow.next.next;
         return head;
 
-
-//        if(head.next==null) return null;
-//        if(head.next.next==null){
-//            head.next = null;
-//            return head;
-//        }
-//
 //        Node fast = head;
 //        Node slow = head;
+//        Node prev = null;
 //
 //        while(fast!=null && fast.next!=null){
+//            prev = slow;
 //            fast = fast.next.next;
 //            slow = slow.next;
 //        }
 //
-//        slow.val = slow.next.val;
-//        slow.next = slow.next.next;
-//
+//        if(head.next==null) return null;
+//        prev.next = slow.next;
 //        return head;
+
     }
 }

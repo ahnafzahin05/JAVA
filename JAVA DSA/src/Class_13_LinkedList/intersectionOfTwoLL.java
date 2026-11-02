@@ -20,12 +20,11 @@ public class intersectionOfTwoLL {
 
         diff = Math.abs(sizeA-sizeB);
 
-        t1 = headA;
-        t2 = headB;
+        t1 = headA; t2 = headB;
         if(sizeA>sizeB) for(int i=1; i<=diff; i++) t1 = t1.next;
         else if(sizeB>sizeA) for(int i=1; i<=diff; i++) t2 = t2.next;
 
-        while (t1!=t2){
+        while (t1!=t2){ //you've to care about the node(address), not the value
             t1 = t1.next;
             t2 = t2.next;
         }
