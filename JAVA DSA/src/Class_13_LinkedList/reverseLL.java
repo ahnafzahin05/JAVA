@@ -5,6 +5,16 @@ public class reverseLL {
 
     }
     public static Node reverse(Node head){
-        return null;
+        Node f = null, prev = null;
+        Node curr = head;
+
+        while(curr!=null){
+            f = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = f;
+        }
+
+        return prev;
     }
 }
