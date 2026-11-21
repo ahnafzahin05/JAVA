@@ -9,7 +9,7 @@ public class addTwoNumbers {
         l2 = reverse(l2);
         int carry = 0;
 
-        while(l1!=null )
+        return null;
     }
     public Node reverse(Node head){
         Node prev = null, f = null, curr = head;
